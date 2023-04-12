@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/app.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="p- bg-slate-200  flex justify-center " >
+    <container class="w-5/6 p-8 mt-4 bg-white rounded-md absolute">
+        <div class="flex items-center w-full justify-between">
+            <div class="">
+                <label for="simple-search" class="text-2xl font-semibold">User</label>
+                <div class="relative w-52">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <input type="text" id="simple-search"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search users" required>
+                </div>
+            </div>
+            <div>
+                <ul class="flex justify-center">
+                    <li class="mr-3">
+                        <a class="inline-block rounded text-gray-400 hover:border-blue-500  py-1 px-3 hover:bg-blue-500 hover:text-white"
+                            href="#">Reputation</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block rounded text-gray-400 hover:border-blue-500  py-1 px-3 hover:bg-blue-500  hover:text-white"
+                            href="#">New user</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block rounded text-gray-400 hover:border-blue-500  py-1 px-3 hover:bg-blue-500  hover:text-white"
+                            href="#">Voter</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block rounded text-gray-400 hover:border-blue-500  py-1 px-3 hover:bg-blue-500  hover:text-white"
+                            href="#">Editors</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block rounded text-gray-400 hover:border-blue-500  py-1 px-3 hover:bg-blue-500  hover:text-white"
+                            href="#">Moderators</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="grid grid-cols-3 grid-rows-2 gap-4 mt-32 w-full md:grid-cols-1 md:grid-rows-6">
+        <div class="flex w-50 h-64 items-center py-12 px-1 rounded-lg bg-amber-50 hover:bg-indigo-50">
+            <div class="w-6/12 sm:w-4/12 px-4">
+                <img src="./img/img-1.png"
+                    alt="..." class="shadow rounded-full border-none" />
+            </div>
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold">Lenah Nichols</h3>
+                <h4>Troy, Mi</h4>
+                <div class="flex flex-wrap gap-1">
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">clothes</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">stems</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex  w-50 h-64 items-center py-12 px-1 rounded-lg bg-red-50 hover:bg-indigo-50">
+            <div class="w-6/12 sm:w-4/12 px-4">
+                <img src="./img/img-2.png"
+                    alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" />
+            </div>
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold">Jesus weiss</h3>
+                <h4>Forworth, TX</h4>
+                <div class="flex flex-wrap gap-1">
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">headset</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">gadget</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">speed</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">winter</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-50 h-64 items-center py-12 px-1 rounded-lg bg-yellow-50  hover:bg-indigo-50">
+            <div class="w-6/12 sm:w-4/12 px-4">
+                <img src="./img/img-3.png"
+                    alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" />
+            </div>
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold">Annie Rice</h3>
+                <h4>Austin, TX</h4>
+                <div class="flex flex-wrap gap-1">
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">road</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">mountain</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">trip</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">earth</a>
+                        <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">nature</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-50 h-64 items-center py-12 px-1 rounded-lg bg-yellow-50  hover:bg-indigo-50">
+            <div class="w-6/12 sm:w-4/12 px-4">
+                <img src="./img/img-4.png"
+                    alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" />
+            </div>
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold">Robert Brower</h3>
+                <h4>Cincinati, OH</h4>
+                <div class="flex flex-wrap gap-1">
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">maintainance</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">gears</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">frames</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">repair</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-50 h-64 items-center py-12 px-1 rounded-lg bg-yellow-50  hover:bg-indigo-50">
+            <div class="w-6/12 sm:w-4/12 px-4">
+                <img src="./img/img-5.png"
+                    alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" />
+            </div>
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold">Amy Cambell</h3>
+                <h4>Warrios, AL</h4>
+                <div class="flex flex-wrap gap-1">
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">music</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">disk</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-50 h-64 items-center py-12 px-1 rounded-lg bg-yellow-50 hover:bg-indigo-50">
+            <div class="w-6/12 sm:w-4/12 px-4">
+                <img src="./img/img-6.png"
+                    alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" />
+            </div>
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold">Anthony S.Morin</h3>
+                <h4>Lyndherst, NJ</h4>
+                <div class="flex flex-wrap gap-1">
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">vintage</a>
+                    <a class="inline-block border border-blue-500 rounded-full text-blue-300 text-xs py-1 px-3"
+                        href="#">electric</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</container>
+</body>
+
+</html>
